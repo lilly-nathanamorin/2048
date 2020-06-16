@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  frontend:
+    container_name: frontend
+    image: nginx 
+    volumes: # Server local source code 
+      - ./src:/usr/share/nginx/html
+    ports:
+      - "80:80"
+
